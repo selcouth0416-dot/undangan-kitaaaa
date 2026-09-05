@@ -137,15 +137,13 @@
     <div class="memory-section">
         <h3>Our Love Story in Pictures</h3>
         <div class="gallery">
-            <!-- Ganti src dengan nama file foto kalian -->
-            <img src="foto1.jpg" alt="Kenangan 1">
-            <img src="foto2.jpg" alt="Kenangan 2">
-            <img src="foto3.jpg" alt="Kenangan 3">
-            <img src="foto4.jpg" alt="Kenangan 4">
-            <img src="foto5.jpg" alt="Kenangan 5">
-            <img src="foto6.jpg" alt="Kenangan 6">
-        </div>
-    </div>
+    <img src="foto1.JPG" alt="Kenangan 1">
+    <img src="foto2.JPG" alt="Kenangan 2">
+    <img src="foto3.JPG" alt="Kenangan 3">
+    <img src="foto4.JPG" alt="Kenangan 4">
+    <img src="foto5.JPG" alt="Kenangan 5">
+    <img src="foto6.JPG" alt="Kenangan 6">
+</div>
 
       <!-- Bagian Peta -->
     <div class="map-section">
