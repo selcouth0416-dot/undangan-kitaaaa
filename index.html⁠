@@ -147,15 +147,16 @@
         </div>
     </div>
 
-    <!-- Bagian Peta -->
+      <!-- Bagian Peta -->
     <div class="map-section">
         <h3>Lokasi Acara</h3>
-        <p>The Secret Garden, Kula, Maui</p>
+        <p>Nama Tempat / Alamat Kamu di Sini</p>
         <div class="map-container">
-            <!-- Cara Ganti Peta: Buka Google Maps -> Bagikan -> Sematkan Peta -> Salin HTML -> Tempel di bawah ini -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1d3727.2472911993683!2d-156.32626502395646!3d20.799797097089454!2m3!1f0!2f0!3f0!3m2!1i1024!2i1024!2f108!4m3!1m2!1s0x795521b444b6e511%3A0x633d0263f6835a2d!2sThe%20Secret%20Garden!5e0!3m2!1sid!2sid!4v1721568000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
+            <!-- Tempel (paste) kode hasil "SALIN HTML" tadi di bawah ini -->
+            <iframe src="LINK_EMBED_DARI_SALIN_HTML" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <a href="https://maps.app.goo.gl/..." target="_blank" class="btn">Buka di Maps</a>
+        <!-- Link untuk tombol diarahkan ke tautan maps kamu -->
+        <a href="https://maps.app.goo.gl/eHSD31kX3jjSyUaQ7" target="_blank" class="btn">Buka di Maps</a>
     </div>
 
     <script>
