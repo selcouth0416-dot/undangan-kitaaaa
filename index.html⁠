@@ -5,53 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Undangan Spesial Kita</title>
     <style>
-        /* Gaya Dasar (CSS) */
         body {
             font-family: 'Georgia', serif;
-            background-color: #fdf6f0; /* Warna krem lembut */
+            background-color: #fdf6f0;
             color: #5d4037;
             margin: 0;
             padding: 0;
             text-align: center;
         }
 
-        /* Musik Player */
         #music-control {
             position: fixed;
             top: 20px;
             right: 20px;
             z-index: 100;
-            background: rgba(255, 255, 255, 0.8);
-            padding: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px 16px;
             border-radius: 50px;
             cursor: pointer;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            font-weight: bold;
         }
 
-        /* Bagian Sampul */
         .header {
-            padding: 100px 20px;
-            background-image: linear-gradient(to bottom, rgba(253,246,240,0.8), #fdf6f0), 
-                              url('foto-utama.jpg'); /* Ganti dengan foto utama kalian */
+            padding: 90px 20px 60px 20px;
+            background-image: linear-gradient(to bottom, rgba(253,246,240,0.85), #fdf6f0), 
+                              url('foto-utama.JPG');
             background-size: cover;
             background-position: center;
         }
 
         .header h1 {
-            font-family: 'Cursive', sans-serif;
-            font-size: 3em;
+            font-size: 2.4em;
             margin-bottom: 10px;
             color: #8d6e63;
         }
 
-        /* Galeri Kenangan */
         .memory-section {
-            padding: 50px 20px;
+            padding: 40px 20px;
         }
 
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 20px;
             max-width: 1000px;
             margin: 0 auto;
@@ -59,106 +55,74 @@
 
         .gallery img {
             width: 100%;
-            height: 250px;
+            height: 280px;
             object-fit: cover;
             border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
         }
 
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Bagian Peta */
         .map-section {
-            padding: 50px 20px;
-            background-color: #fff;
+            padding: 40px 20px 70px 20px;
+            background-color: #ffffff;
         }
 
-        .map-container {
-            overflow: hidden;
-            padding-bottom: 56.25%;
-            position: relative;
-            height: 0;
-            max-width: 800px;
-            margin: 0 auto;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        .map-container iframe {
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            border: 0;
-        }
-
-        /* Tombol */
         .btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 28px;
             background-color: #8d6e63;
             color: white;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 30px;
             margin-top: 20px;
-            transition: background-color 0.3s;
+            font-size: 16px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
         }
 
         .btn:hover {
             background-color: #5d4037;
         }
-
     </style>
 </head>
 <body>
 
-    <!-- Musik Player -->
+    <!-- Tombol Musik -->
     <div id="music-control" onclick="toggleMusic()">
         🎵 <span id="music-status">Play</span>
     </div>
     <audio id="myAudio" loop>
         <source src="love-story.mp3" type="audio/mpeg">
-        Browser kamu tidak mendukung pemutar audio.
     </audio>
 
-    <!-- Bagian Sampul -->
+    <!-- Header / Judul Undangan -->
     <div class="header">
         <h1>Perayaan Spesial Kami</h1>
-        <p>You meet me with a smile...</p>
-        <h2>Alex & Sarah</h2>
+        <p><i>"You'll be the prince and I'll be the princess..."</i></p>
+        <h2>Alex &amp; Sarah</h2>
         <p>Sabtu, 12 Oktober 2024</p>
     </div>
 
-    <!-- Bagian Kenangan -->
+    <!-- Galeri Foto Kenangan -->
     <div class="memory-section">
-        <h3>Our Love Story in Pictures</h3>
+        <h3>Our Story in Pictures</h3>
         <div class="gallery">
-    <img src="foto1.JPG" alt="Kenangan 1">
-    <img src="foto2.JPG" alt="Kenangan 2">
-    <img src="foto3.JPG" alt="Kenangan 3">
-    <img src="foto4.JPG" alt="Kenangan 4">
-    <img src="foto5.JPG" alt="Kenangan 5">
-    <img src="foto6.JPG" alt="Kenangan 6">
-</div>
+            <img src="foto1.JPG" alt="Kenangan 1">
+            <img src="foto2.JPG" alt="Kenangan 2">
+            <img src="foto3.JPG" alt="Kenangan 3">
+            <img src="foto4.JPG" alt="Kenangan 4">
+            <img src="foto5.JPG" alt="Kenangan 5">
+            <img src="foto6.JPG" alt="Kenangan 6">
+        </div>
+    </div>
 
-      <!-- Bagian Peta -->
+    <!-- Lokasi Acara -->
     <div class="map-section">
         <h3>Lokasi Acara</h3>
-        <p>Nama Tempat / Alamat Kamu di Sini</p>
-        <div class="map-container">
-            <!-- Tempel (paste) kode hasil "SALIN HTML" tadi di bawah ini -->
-            <iframe src="LINK_EMBED_DARI_SALIN_HTML" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <!-- Link untuk tombol diarahkan ke tautan maps kamu -->
-        <a href="https://maps.app.goo.gl/eHSD31kX3jjSyUaQ7" target="_blank" class="btn">Buka di Maps</a>
+        <p>Klik tombol di bawah untuk petunjuk arah langsung ke lokasi via Google Maps:</p>
+        <br>
+        <a href="https://maps.app.goo.gl/eHSD31kX3jjSyUaQ7" target="_blank" class="btn">📍 Buka Peta Lokasi di Google Maps</a>
     </div>
 
     <script>
-        // Script untuk Kontrol Musik
         var audio = document.getElementById("myAudio");
         var statusSpan = document.getElementById("music-status");
 
@@ -172,7 +136,6 @@
             }
         }
 
-        // Mencoba play otomatis saat halaman diklik (karena kebijakan browser modern)
         document.body.addEventListener('click', function() {
             if (audio.paused) {
                 audio.play();
